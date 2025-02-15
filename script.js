@@ -1,14 +1,14 @@
-//your JS code here. If required.
- 
 const student = {
   name: "John",
+  age: 30,
+  city: "New York",
+  getKeys: function () {
+    return Object.keys(this);
+  }
 };
 
- function getKeys(obj) {
-  return Object.keys(obj);
-}
+// Test output
+console.log(student.getKeys()); 
 
- console.log(getKeys(student)); // Output: ["name"]
-
- window.student = student;
-window.getKeys = getKeys;
+// Do not change the code below
+window.student = student;
